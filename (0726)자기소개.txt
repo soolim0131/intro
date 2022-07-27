@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- 폰트 연결-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&amp;family=Oswald:wght@500&amp;family=Roboto+Mono:wght@200&amp;family=Roboto:wght@300&amp;display=swap" rel="stylesheet">
+    <title>SOOLIM</title>
+  </head>
+<style>
+
+body {
+    margin: 0;
+  }
+  /*.container {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+  }*/
+
+  /*메뉴CSS*/
+  /* . 은 class를 선택하는거 */
+  .menu-bar {
+    position: fixed;
+    border: 0;
+    background-color: #2B3856;
+    display: block;
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .index {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .index h3:hover {
+    font-size: 1.1em;
+    color: blue;
+    opacity: 1;
+    text-shadow: 0.7px 0.7px 0.7px #000;
+  }
+  section {
+    margin-left: 260px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .favorite img {
+    margin-right: 7px;
+    margin-top:10px;
+    border: 5px;
+    border-style: solid;
+    border-color: lightgray;
+    border-image-outset: 10px;
+    width: 120px;
+    height: 150px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .about p{
+    font-size: 55px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+  }
+</style>
+  <body>
+    <header>
+    </header>
+  <!--메뉴부분-->
+      <nav class="menu-bar">
+        <div class="index">
+          <!-- 목차 내용 -->
+          <!-- h 글자크기 -->
+          <h3 class="click">ABOUT</h3>
+          <h3 class="click">FAVORITE</h3>
+        </div>
+      </nav>
+      <!--메뉴부분끝-->
+      <section class="about">
+        <p>KIM SOO LIM</p><br>  
+        보건의료사업부<br>
+        ∝ 김수림<br>
+        ∝ 1월 31일<br>
+        ∝ 서울 노원구 거주<br>
+        ∝ 여행 , 영화
+      </section>
+      <section class="favorite">
+        사진넣기<br/>
+      <div class="favorite">
+        <img src="image/KakaoTalk_20220726_003716223.jpg"    width="200" height="200">
+        <img src="image/KakaoTalk_20220726_003716223_01.jpg" width="200" height="200">
+        <img src="image/KakaoTalk_20220726_003716223_03.jpg" width="200" height="200"> 
+        <img src="image/KakaoTalk_20220726_003716223_05.jpg" width="200" height="200"> 
+        <img src="image/KakaoTalk_20220726_003716223_06.jpg" width="200" height="200"><br/> 
+        <img src="image/KakaoTalk_20220726_003716223_08.jpg" width="200" height="200">
+        <img src="image/KakaoTalk_20220726_003716223_07.jpg" width="200" height="200">
+        <img src="image/KakaoTalk_20220726_010751493_01.jpg" width="200" height="200">   
+        <img src="image/KakaoTalk_20220726_010825759.jpg"    width="200" height="200">
+      </div>
+      </section>
+
+      <script type="text/javascript">
+        const clicks = document.querySelectorAll(".click")
+        const sections = document.querySelectorAll("section")
+        const firstTop = sections[0].offsetTop
+        const secondTop = sections[1].offsetTop
+        // const thirdTop = sections[2].offsetTop
+        // const fourthTop = sections[3].offsetTop
+        
+        
+        clicks[0].onclick = function() {
+          window.scroll({top: firstTop, behavior: 'smooth'})
+        }
+        clicks[1].onclick = function() {
+          window.scroll({top: secondTop, behavior: 'smooth'})
+        }
+        // clicks[2].onclick = function() {
+        //   window.scroll({top: thirdTop, behavior: 'smooth'})
+        // }
+        // clicks[3].onclick = function() {
+        //   window.scroll({top: fourthTop, behavior: 'smooth'})
+        // }
+        </script>
+</body>
+</html>

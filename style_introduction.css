@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+  }
+  /*.container {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+  }*/
+
+  /*메뉴CSS
+  .menu-bar {
+    position: fixed;
+    border: 0;
+    background-color: #2B3856;
+    display: block;
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  */
+  .index {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }

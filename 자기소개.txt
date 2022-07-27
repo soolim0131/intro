@@ -1,0 +1,23 @@
+<html>
+    <head>
+    <title>SOO LIM homepage</title>
+    <meta charset="utf-8">
+    </head>
+    <body>
+        <div style="text-align: center">
+          <a href='https://ifh.cc/v-53rHnD' target='_blank'><img src='https://ifh.cc/g/53rHnD.jpg' width="200" heigh="190" border='0'></a>
+          <h1>Hello I'm SOO LIM</h1>
+    <br/>
+    <a href="https://github.com/ire4564"><img src="github.png" width="70px" height="70px"></a>
+    <a href="https://www.facebook.com/profile.php?id=100005103496461"><img src="facebook.png" width="73px" height="73px"></a>
+    <a href="https://www.instagram.com/ire_0546/"><img src="instagram.png" width="70px" height="70px"></a>
+    <a href="https://iredays.tistory.com/"><img src="blog.png" width="64px" height="64px"></a> 
+    <h4 style="color: gray">Click this icons<br>then, you can go to My SNS Page</h4>
+    <h5>welcome to my information homepage! actually, this is my frist info page<br>but not difficult to make this page. you know, I'm not good at English well! 
+<br>Actually, this talks about Me, but I don't have many too much information.<br> hum well, yes.frist my favorite food is cheese and Korean Barbecue.</h5>
+ 
+ 
+    <h6 style="color: gray">@ire4564_info COMPANY</h6>
+    </div>
+    </body>
+</html>
