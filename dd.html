@@ -1,0 +1,155 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- 폰트 연결-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&amp;family=Oswald:wght@500&amp;family=Roboto+Mono:wght@200&amp;family=Roboto:wght@300&amp;display=swap" rel="stylesheet">
+    <title>SOOLIM</title>
+  </head>
+<style>
+
+body {
+    margin: 0;
+  }
+  /*메뉴CSS*/
+  /* . 은 class를 선택하는거 */
+  .img {
+    justify-content: center;
+  }
+  #porfile-img {
+  width: 160px;
+  height: 160px;
+  border: 1px solid #2B3856;
+  transform: scale(1); /* 이미지 사이즈 고정 */
+  border-radius: 70%
+  }
+
+  .menu-bar {
+    position: fixed;
+    border: 0;
+    background-color: #2B3856;
+    display: block;
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .index h3 {
+    color: white;
+    opacity: 0.7;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .index {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .index h3:hover {
+    font-size: 1.1em;
+    color: white;
+    opacity: 1;
+    text-shadow: 0.7px 0.7px 0.7px #000;
+  }
+  section {
+    margin-left: 260px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .favorite img {
+    margin-right: 7px;
+    margin-top:10px;
+    border: 5px;
+    border-style: solid;
+    border-color: lightgray;
+    border-image-outset: 10px;
+    width: 120px;
+    height: 150px;
+    transition: all 0.3s ease-in-out;
+  }
+  .ksl{
+    font-size: 70px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+  }
+
+    .favorite p{
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+</style>
+  <body>
+    <header>
+    </header>
+  <!--메뉴부분-->
+      <nav class="menu-bar">
+        <div class="index">
+        <div class="img">
+          <img id="porfile-img" src="image/KakaoTalk_20220713_034603333.jpg">
+        </div>
+          <!-- 목차 내용 -->
+          <!-- h 글자크기 -->
+          <h3 class="click">ABOUT</h3>
+          <h3 class="click">FAVORITE</h3>
+        </div>
+      </nav>
+      <!--메뉴부분끝-->
+      <section class="about">
+        <p class="ksl">KIM SOO LIM</p>        
+        <i class="fa-solid fa-face-laugh-wink"> 김수림</i><br>
+        <i class="fa-solid fa-cake-candles"> 1월 31일</i><br>      
+        <i class="fa-solid fa-house-user"> 서울 노원구 거주</i><br>
+        <i class="fa-solid fa-heart"> 여행하기, 영화보기</i><br>
+        <i class="fa-solid fa-building"> 한국사회보장정보원 보건의료사업부 </i><br>
+        <i class="fa-solid fa-mobile-screen-button"> +(82)10-8912-8681</i><br>  
+        <i class="fa-solid fa-square-envelope"> slrncw13@ssis.or.kr</i> 
+      </section>
+      <section class="favorite">
+      <div class="favorite">
+        <p> TRAVEL :) </p>
+        <img src="image/KakaoTalk_20220726_003716223.jpg"    width="200" height="200">
+        <img src="image/KakaoTalk_20220726_003716223_01.jpg" width="200" height="200">
+        <img src="image/KakaoTalk_20220726_003716223_03.jpg" width="200" height="200"> 
+        <img src="image/KakaoTalk_20220726_003716223_05.jpg" width="200" height="200"> 
+        <img src="image/KakaoTalk_20220726_003716223_06.jpg" width="200" height="200"><br/> 
+        <img src="image/KakaoTalk_20220726_003716223_08.jpg" width="200" height="200">
+        <img src="image/KakaoTalk_20220726_003716223_07.jpg" width="200" height="200">
+        <img src="image/KakaoTalk_20220726_010751493_01.jpg" width="200" height="200">   
+        <img src="image/KakaoTalk_20220726_010825759.jpg"    width="200" height="200">
+        <img src="image/KakaoTalk_20220726_003716223_02.jpg" width="200" height="200">
+      </div>
+      </section>
+
+      <script type="text/javascript">
+        const clicks = document.querySelectorAll(".click")
+        const sections = document.querySelectorAll("section")
+        const firstTop = sections[0].offsetTop
+        const secondTop = sections[1].offsetTop
+        // const thirdTop = sections[2].offsetTop
+        // const fourthTop = sections[3].offsetTop
+        
+        
+        clicks[0].onclick = function() {
+          window.scroll({top: firstTop, behavior: 'smooth'})
+        }
+        clicks[1].onclick = function() {
+          window.scroll({top: secondTop, behavior: 'smooth'})
+        }
+        // clicks[2].onclick = function() {
+        //   window.scroll({top: thirdTop, behavior: 'smooth'})
+        // }
+        // clicks[3].onclick = function() {
+        //   window.scroll({top: fourthTop, behavior: 'smooth'})
+        // }
+        </script>
+</body>
+</html>
